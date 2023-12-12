@@ -14,7 +14,7 @@ body {
   margin-left: 10%;
   margin-right: 10%;
   flex-direction: column;
-
+  overflow : hidden;
 }
 
 .container {
