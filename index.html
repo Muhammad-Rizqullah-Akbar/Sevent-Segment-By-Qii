@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seven Segment By Qii</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/howler@2.2.3/dist/howler.min.js"></script>
+</head>
+
+<body>
+    
+    <video autoplay muted loop id="bgVideo" class="bg-video">
+        <source src="bg-space.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+      
+    <div class="row">
+        <div class="container">
+            <div class="col input animate__animated animate__lightSpeedInLeft ">
+                <h1>Pilih salah satu angka dibawah ini</h1>
+                <p>"Seven segment hanya dapat menampilkan angka 0-9"</p>
+                <div class="option">
+                    <div class="col-b">
+                        <button class="btn" onclick="output(0)">0</button>
+                        <button class="btn" onclick="output(1)">1</button>
+                        <button class="btn" onclick="output(2)">2</button>
+                        <button class="btn" onclick="output(3)">3</button>
+                        <button class="btn" onclick="output(4)">4</button>
+                    </div>
+                    <div class="col-c">
+                        <button class="btn" onclick="output(5)">5</button>
+                        <button class="btn" onclick="output(6)">6</button>
+                        <button class="btn" onclick="output(7)">7</button>
+                        <button class="btn" onclick="output(8)">8</button>
+                        <button class="btn" onclick="output(9)">9</button>
+                    </div>
+                    <div class="col-d">
+                        <button class="btn btn-reset" onclick="reset()">RESET</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col output">
+                <h2>Output</h2>
+                <span class="a"></span>
+                <span class="b"></span>
+                <span class="c"></span>
+                <span class="d"></span>
+                <span class="e"></span>
+                <span class="f"></span>
+                <span class="g"></span>
+            </div>
+        </div>
+        <div class="col-1">
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="4">binary</th>
+                            <th colspan="7">Seven Segment</th>
+                            <th rowspan="2">Display</th>
+                        </tr>
+                        <tr>
+                            <th>W</th>
+                            <th>X</th>
+                            <th>Y</th>
+                            <th>Z</th>
+                            <th>a</th>
+                            <th>b</th>
+                            <th>c</th>
+                            <th>d</th>
+                            <th>e</th>
+                            <th>f</th>
+                            <th>g</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <!-- binary -->
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <!-- seven segment -->
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <!-- display -->
+                            <td>0</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h2 class="animate__animated animate__lightSpeedInLeft">Muhammad Rizqullah Akbar Adlan</h2>
+            <h2 class="animate__animated animate__lightSpeedInLeft">Tugas Sistem Digital</h2>
+            <h2 class="animate__animated animate__lightSpeedInLeft">D121231037</h2>
+
+        </div>
+        <script src="script.js"></script>
+        <script>
+            var sound = new Howl({
+                src: ['bg-sound.mp3'],
+                volume: 0.08, // Atur volume menjadi 0.01
+                autoplay: true,
+                loop: true
+            });
+        </script>
+</body>
+
+</html>

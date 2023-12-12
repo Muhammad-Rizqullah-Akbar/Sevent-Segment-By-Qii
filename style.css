@@ -1,0 +1,347 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Poppins', sans-serif;
+  background-color: rgba(0, 0, 0, 0.76);
+}
+
+.row {
+  height: 100vh;
+  width: 80%;
+  display: flex;
+  margin-left: 10%;
+  margin-right: 10%;
+  flex-direction: column;
+
+}
+
+.container {
+  padding: 10px 30px 0 89px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+}
+
+
+.col {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: aliceblue;
+}
+
+.col-1 {
+  width: 100%;
+  height: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: aliceblue;
+  margin-bottom: 30px;
+  padding: 0 20 0 20;
+}
+
+.col h1 {
+  font-size: 45px;
+  margin-bottom: 0;
+  padding-top: 40px;
+}
+
+.col img {
+  transform: scale(70%);
+  position: absolute;
+}
+
+.col p {
+  margin-bottom: 30px;
+}
+
+.col h2 {
+  transform: translateY(140px);
+}
+
+.col .btn {
+  width: 100%;
+  height: 50px;
+  margin-top: 15px;
+  border-radius: 40px;
+  cursor: pointer;
+  border: 2px solid #747128;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 600;
+  padding: 15px 20px 20px 20px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(11, 170, 46, 0.438);
+  background-color: #74712800;
+}
+
+.col .profil {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #d4d4c6;
+  transition: .4s ease-in-out;
+  color: #050101;
+}
+
+.table-container {
+  width: 85%;
+  color: #fff;
+  padding-top: 0px;
+  padding-bottom: 20px;
+  margin: 0;
+}
+
+table {
+  width: 100%;
+  margin-top: 0px;
+  border-collapse: collapse;
+}
+
+thead th {
+  background-color: #747128;
+  border: 1px solid #fff;
+  padding: 8px;
+  text-align: center;
+}
+
+tbody td {
+  border: 1px solid #fff;
+  padding: 8px;
+  text-align: center;
+}
+
+
+.col-1 h2 {
+  margin: 0;
+}
+
+
+
+.col {
+  text-align: center;
+}
+
+.option {
+  display: flex;
+  flex-direction: column;
+}
+
+.col-b,
+.col-c {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+
+.col h2 {
+  transform: translate(-5px, -25px);
+}
+
+/*  ====== SEVEN SEGMEN ======== */
+
+.a {
+  width: 120px;
+  /* Lebar persegi panjang */
+  height: 20px;
+  /* Tinggi persegi panjang */
+  background:
+    linear-gradient(135deg, transparent 10px, #000 10px),
+    /* Gradien sudut kiri atas */
+    linear-gradient(-135deg, transparent 10px, #000 10px),
+    /* Gradien sudut kanan atas */
+    linear-gradient(45deg, transparent 10px, #000 10px),
+    /* Gradien sudut kiri bawah */
+    linear-gradient(-45deg, transparent 10px, #000 10px);
+  /* Gradien sudut kanan bawah */
+  background-size: 50% 50%;
+  /* Ukuran gradien */
+  background-position: top left, top right, bottom left, bottom right;
+  /* Posisi gradien */
+  background-repeat: no-repeat;
+  /* Hindari pengulangan gradien */
+  transform: translateY(-10px);
+}
+
+.b {
+  width: 120px;
+  /* Lebar persegi panjang */
+  height: 20px;
+  /* Tinggi persegi panjang */
+  background:
+    linear-gradient(135deg, transparent 10px, #000 10px),
+    /* Gradien sudut kiri atas */
+    linear-gradient(-135deg, transparent 10px, #000 10px),
+    /* Gradien sudut kanan atas */
+    linear-gradient(45deg, transparent 10px, #000 10px),
+    /* Gradien sudut kiri bawah */
+    linear-gradient(-45deg, transparent 10px, #000 10px);
+  /* Gradien sudut kanan bawah */
+  background-size: 50% 50%;
+  /* Ukuran gradien */
+  background-position: top left, top right, bottom left, bottom right;
+  /* Posisi gradien */
+  background-repeat: no-repeat;
+  /* Hindari pengulangan gradien */
+  transform: rotate(90deg) translateX(30px) translateY(60px);
+  /* Memutar segmen B 90 derajat ke kiri bawah */
+}
+
+.c {
+  width: 120px;
+  /* Lebar persegi panjang */
+  height: 20px;
+  /* Tinggi persegi panjang */
+  background:
+    linear-gradient(135deg, transparent 10px, #000 10px),
+    /* Gradien sudut kiri atas */
+    linear-gradient(-135deg, transparent 10px, #000 10px),
+    /* Gradien sudut kanan atas */
+    linear-gradient(45deg, transparent 10px, #000 10px),
+    /* Gradien sudut kiri bawah */
+    linear-gradient(-45deg, transparent 10px, #000 10px);
+  /* Gradien sudut kanan bawah */
+  background-size: 50% 50%;
+  /* Ukuran gradien */
+  background-position: top left, top right, bottom left, bottom right;
+  /* Posisi gradien */
+  background-repeat: no-repeat;
+  /* Hindari pengulangan gradien */
+  transform: rotate(90deg) translateX(10px) translateY(-60px);
+  /* Memutar segmen B 90 derajat ke kiri bawah */
+}
+
+.d {
+  width: 120px;
+  /* Lebar persegi panjang */
+  height: 20px;
+  /* Tinggi persegi panjang */
+  background:
+    linear-gradient(135deg, transparent 10px, #000 10px),
+    /* Gradien sudut kiri atas */
+    linear-gradient(-135deg, transparent 10px, #000 10px),
+    /* Gradien sudut kanan atas */
+    linear-gradient(45deg, transparent 10px, #000 10px),
+    /* Gradien sudut kiri bawah */
+    linear-gradient(-45deg, transparent 10px, #000 10px);
+  /* Gradien sudut kanan bawah */
+  background-size: 50% 50%;
+  /* Ukuran gradien */
+  background-position: top left, top right, bottom left, bottom right;
+  /* Posisi gradien */
+  background-repeat: no-repeat;
+  /* Hindari pengulangan gradien */
+  transform: translateY(50px);
+  /* Memutar segmen B 90 derajat ke kiri bawah */
+}
+
+.e {
+  width: 120px;
+  /* Lebar persegi panjang */
+  height: 20px;
+  /* Tinggi persegi panjang */
+  background:
+    linear-gradient(135deg, transparent 10px, #000 10px),
+    /* Gradien sudut kiri atas */
+    linear-gradient(-135deg, transparent 10px, #000 10px),
+    /* Gradien sudut kanan atas */
+    linear-gradient(45deg, transparent 10px, #000 10px),
+    /* Gradien sudut kiri bawah */
+    linear-gradient(-45deg, transparent 10px, #000 10px);
+  /* Gradien sudut kanan bawah */
+  background-size: 50% 50%;
+  /* Ukuran gradien */
+  background-position: top left, top right, bottom left, bottom right;
+  /* Posisi gradien */
+  background-repeat: no-repeat;
+  /* Hindari pengulangan gradien */
+  transform: rotate(90deg) translateX(90px) translateY(60px);
+  /* Memutar segmen B 90 derajat ke kiri bawah */
+}
+
+.f {
+  width: 120px;
+  /* Lebar persegi panjang */
+  height: 20px;
+  /* Tinggi persegi panjang */
+  background:
+    linear-gradient(135deg, transparent 10px, #000 10px),
+    /* Gradien sudut kiri atas */
+    linear-gradient(-135deg, transparent 10px, #000 10px),
+    /* Gradien sudut kanan atas */
+    linear-gradient(45deg, transparent 10px, #000 10px),
+    /* Gradien sudut kiri bawah */
+    linear-gradient(-45deg, transparent 10px, #000 10px);
+  /* Gradien sudut kanan bawah */
+  background-size: 50% 50%;
+  /* Ukuran gradien */
+  background-position: top left, top right, bottom left, bottom right;
+  /* Posisi gradien */
+  background-repeat: no-repeat;
+  /* Hindari pengulangan gradien */
+  transform: rotate(90deg) translateX(70px) translateY(-60px);
+  /* Memutar segmen B 90 derajat ke kiri bawah */
+}
+
+.g {
+  width: 120px;
+  /* Lebar persegi panjang */
+  height: 20px;
+  /* Tinggi persegi panjang */
+  background:
+    linear-gradient(135deg, transparent 10px, #000 10px),
+    linear-gradient(-135deg, transparent 10px, #000 10px),
+    linear-gradient(45deg, transparent 10px, #000 10px),
+    linear-gradient(-45deg, transparent 10px, #000 10px);
+  background-size: 50% 50%;
+  /* Ukuran gradien */
+  background-position: top left, top right, bottom left, bottom right;
+  /* Posisi gradien */
+  background-repeat: no-repeat;
+  /* Hindari pengulangan gradien */
+  transform: translateY(110px);
+  /* Memutar segmen B 90 derajat ke kiri bawah */
+}
+
+/*  ====== SEVEN SEGMEN ======== */
+
+.output {
+  display: none;
+  transition: 5s ease-in-out;
+}
+
+.table-container {
+  display: none;
+  transition: 5s ease-in-out;
+}
+
+.btn-reset {
+  display: none;
+}
+
+:root {
+  --animate-delay: 0.5s;
+}
+
+.bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
