@@ -5,14 +5,27 @@
     }
 
     .col h1 {
-        font-size: 20px;
-        margin-top: 65px;
+        font-size: 18px;
+        margin-top: -10px;
+    }
+
+    .row {
+        width: 100%;
+        margin: 0;
+    }
+
+    .col h2 {
+        transform: translate(-3px, 39px);
     }
 
     .container {
         padding: 0px 0px 0 0px;
         flex-direction: column;
         margin: 0;
+    }
+
+    .col p {
+        margin-bottom: 10px;
     }
 
     .col-1 {
@@ -29,31 +42,80 @@
         height: 70%;
     }
 
-
-    thead th {
-        padding: 5px;
+    .col-b,
+    .col-c {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
     }
 
+    thead th {
+        padding: 6px;
+    }
+    
     tbody td {
-        padding: 5px;
+        padding: 6px;
     }
 
     .option {
-        gap: 0px;
         width: 100%;
-        height: 100%;
-        padding: 9px 24px 6px 16px;
+        height: 20%;
         margin-bottom: 40px;
+    }
+
+    .output {
+        width: 100%;
     }
 
     .col-1 {
         transform: translateY(140px);
 
     }
-    .table-container{
-        padding-right: 35px;
+
+    .a,
+    .b,
+    .c,
+    .d,
+    .e,
+    .f,
+    .g {
+        width: 100px;
+        height: 20px;
+    }
+
+    .a {
+        transform: translateY(40px);
+    }
+
+    .b {
+        transform: rotate(90deg) translateX(68px) translateY(50px);
+    }
+
+    .c {
+        transform: rotate(90deg) translateX(48px) translateY(-50px);
+    }
+
+    .d {
+        transform: translateY(77px);
+    }
+
+    .e {
+        transform: rotate(90deg) translateX(105px) translateY(50px);
+    }
+
+    .f {
+        transform: rotate(90deg) translateX(84px) translateY(-50px);
+    }
+
+    .g {
+        transform: translateY(113px);
+    }
+
+    .table-container {
+        width: 100%;
     }
 }
+
 /* ---------------Tampilan Hp End ------------- */
 
 /* ------------ Tampilan Tablet ---------------- */
@@ -77,7 +139,7 @@
     }
 
     .col h1 {
-        margin-top: 145px;
+        margin-top: 70px;
         font-size: 25px;
     }
 
@@ -86,10 +148,11 @@
     }
 
     .col-1 {
-        transform: translateY(120px);
+        transform: translateY(35px);
 
     }
 }
+
 /* -------------- Tampilan Tablet End ----------- */
 
 /* -----------------Tampilan Laptop ------------- */
@@ -97,29 +160,37 @@
     .col h1 {
         font-size: 30px;
     }
+
     .col-1 {
         transform: translateY(60px);
 
     }
-  .col-1 h2{
-    padding-left: 105px;
+
+    .col-1 h2 {
+        padding-left: 30px;
     }
+
     .container {
-        padding: 20px 30px 0 43px;
+        padding: 20px 30px 0 15px;
     }
 }
+
 @media (min-width: 1025px) {
     .col h1 {
         font-size: 30px;
     }
+
     .col-1 {
         transform: translateY(60px);
     }
-    .col-1 h2{
-    padding-left: 105px;
+
+    .col-1 h2 {
+        padding-left: 0px;
     }
+
     .container {
-        padding: 20px 30px 0 43px;
+        padding: 20px 30px 0 0px;
     }
 }
+
 /* --------------- Tampilan Laptop End ---------------- */
