@@ -1,14 +1,10 @@
 const nyala = `background: linear-gradient(135deg, transparent 10px, yellow 10px),linear-gradient(-135deg, transparent 10px, yellow 10px),linear-gradient(45deg, transparent 10px, yellow 10px),linear-gradient(-45deg, transparent 10px, yellow 10px);background-size: 50% 50%;background-position: top left, top right, bottom left, bottom right;background-repeat: no-repeat;`;
 const mati = `background: linear-gradient(135deg, transparent 10px, #000 10px),linear-gradient(-135deg, transparent 10px, #000 10px),linear-gradient(45deg, transparent 10px, #000 10px),linear-gradient(-45deg, transparent 10px, #000 10px);background-size: 50% 50%;background-position: top left, top right, bottom left, bottom right;background-repeat: no-repeat;`;
-const Output = document.querySelector('.output');
-const Tabel = document.querySelector('.table-container');
-const btnReset = document.querySelector('.btn-reset');
+const Output = document.querySelector('.output'); Tabel = document.querySelector('.table-container'); btnReset = document.querySelector('.btn-reset'); input = document.querySelectorAll('.input');
 const BC = document.querySelectorAll('.table-container tbody tr td:nth-child(-n + 4)');
 const SSC = document.querySelectorAll('.table-container tbody tr td:nth-child(n+5):nth-child(-n+11)');
 const OP = document.querySelectorAll('.container .col span');
-const BTN = document.querySelectorAll('.btn');
 const nick = document.querySelectorAll('.table-container h2');
-const input = document.querySelectorAll('.input');
 const DC = document.querySelector('.table-container tbody tr td:last-child');
 
 function output(btn) {
